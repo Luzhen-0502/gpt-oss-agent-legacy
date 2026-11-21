@@ -17,7 +17,7 @@
 打开 **PowerShell**（开始菜单搜 PowerShell），把下面这一整行粘进去，回车：
 
 ```powershell
-irm https://raw.githubusercontent.com/Luzhen-0502/gpt-oss-agent/main/install.ps1 | iex
+irm https://github.com/Luzhen-0502/gpt-oss-agent/releases/latest/download/install.ps1 | iex
 ```
 
 它会自动做四件事：
@@ -29,8 +29,20 @@ irm https://raw.githubusercontent.com/Luzhen-0502/gpt-oss-agent/main/install.ps1
 
 装完桌面双击就能用。
 
-> 如果 PowerShell 提示「禁止运行脚本」，先用这条命令放开当前会话：
+<details>
+<summary>如果这条命令连不上（个别网络环境），点这里用镜像版</summary>
+
+```powershell
+irm https://gh-proxy.com/https://raw.githubusercontent.com/Luzhen-0502/gpt-oss-agent/main/install.ps1 | iex
+```
+
+</details>
+
+> 如果 PowerShell 提示「禁止运行脚本」，先跑这条放开当前会话：
 > `Set-ExecutionPolicy -Scope Process Bypass`
+
+> 不想跑脚本？直接下 exe 也行：
+> [**GPTOSS-Agent.exe**](https://github.com/Luzhen-0502/gpt-oss-agent/releases/latest/download/GPTOSS-Agent.exe)（305 MB）
 
 ---
 
