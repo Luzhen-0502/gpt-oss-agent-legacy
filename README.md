@@ -12,6 +12,28 @@
 
 ---
 
+## ⚡ 一键安装（Windows，推荐）
+
+打开 **PowerShell**（开始菜单搜 PowerShell），把下面这一整行粘进去，回车：
+
+```powershell
+irm https://raw.githubusercontent.com/Luzhen-0502/gpt-oss-agent/main/install.ps1 | iex
+```
+
+它会自动做四件事：
+
+1. 下载 `GPTOSS-Agent.exe` 到 `%USERPROFILE%\GPTOSS-Agent\`
+2. 下载模型下载脚本
+3. 在桌面建一个「GPT-OSS Agent」快捷方式
+4. 问你要不要**现在就把 19GB 模型下好**（选 y 就一条龙搞定）
+
+装完桌面双击就能用。
+
+> 如果 PowerShell 提示「禁止运行脚本」，先用这条命令放开当前会话：
+> `Set-ExecutionPolicy -Scope Process Bypass`
+
+---
+
 ## 这是什么
 
 一个**完全手写**的桌面 Agent。不用 LangChain、不用 AutoGen、不用 LlamaIndex、不用 OpenAI Agents SDK。
